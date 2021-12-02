@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "axolotlremover",
+  "version": "${version}",
+  "name": "AxolotlRemover",
+  "description": "Minecraft mod to get rid of those useless axolotls",
+  "authors": [
+    "lechos22"
+  ],
+  "contact": {
+    "repo": "https://github.com/lechos22/axolotlremover"
+  },
+  "license": "MIT",
+  "icon": "assets/axolotlremover/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.lechos22.axolotlremover.client.AxolotlRemoverClient"
+    ],
+    "main": [
+      "com.lechos22.axolotlremover.AxolotlRemover"
+    ]
+  },
+  "mixins": [
+    "axolotlremover.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "fabric": "*",
+    "minecraft": "1.18"
+  }
+}
